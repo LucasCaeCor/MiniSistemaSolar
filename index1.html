@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Adicionando Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles1.css">
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html#sun">Sistema Solar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                <a  class="nav-link" href="#" onclick="showPlanet('sun')">Sol</a>
+                <a  class="nav-link" href="#" onclick="showPlanet('mercury')">Mercúrio</a>
+                <a  class="nav-link" href="#" onclick="showPlanet('venus')">Vênus</a>
+                <a  class="nav-link" href="#" onclick="showPlanet('earth')">Terra</a>
+                <a  class="nav-link" href="#" onclick="showPlanet('mars')">Marte</a>
+                <a  class="nav-link" href="#" onclick="showPlanet('jupiter')">Júpiter</a>
+                <a  class="nav-link" href="#" onclick="showPlanet('saturn')">Saturno</a>
+                <a  class="nav-link" href="#" onclick="showPlanet('uranus')">Urano</a>
+                <a  class="nav-link" href="#" onclick="showPlanet('neptune')">Netuno</a>
+                </ul>
+            </div>
+            <div class=" mostrarTodos">
+                <ul class="navbar-nav ml-auto">
+                <a  href="#" onclick="showPlanet('all')">Mostrar Todos</a>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="container">
+        <div id="solarSystem" class="solarSystem">
+            <div id="sun" class="planet sun"></div>
+            <div class="orbit" id="mercuryOrbit" style="width: 120px; height: 120px;">
+                <div id="mercury" class="planet mercury"></div>
+            </div>
+            <div class="orbit" id="venusOrbit" style="width: 180px; height: 180px;">
+                <div id="venus" class="planet venus"></div>
+            </div>
+            <div class="orbit" id="earthOrbit" style="width: 240px; height: 240px;">
+                <div id="earth" class="planet earth"></div>
+            </div>
+            <div class="orbit" id="marsOrbit" style="width: 300px; height: 300px;">
+                <div id="mars" class="planet mars"></div>
+            </div>
+            <div class="orbit" id="jupiterOrbit" style="width: 360px; height: 360px;">
+                <div id="jupiter" class="planet jupiter"></div>
+            </div>
+            <div class="orbit" id="saturnOrbit" style="width: 420px; height: 420px;">
+                <div id="saturn" class="planet saturn"></div>
+            </div>
+            <div class="orbit" id="uranusOrbit" style="width: 480px; height: 480px;">
+                <div id="uranus" class="planet uranus"></div>
+            </div>
+
+        </div>
+    </main>
+    
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>Fim da página</p>
+    </footer>
+
+        <!-- Botão de Modo Escuro -->
+        <button id="toggleNightMode" class="btn btn-light">
+            <i class="fas fa-sun"></i>
+        </button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts1.js"></script>
+</body>
+</html>
